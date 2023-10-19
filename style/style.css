@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: rgb(231, 200, 152);
+}
+
+/* css for header starts from here */
+.container {
+    display: flex;
+}
+header {
+    height: 80px;
+    background-color: #e2b110;
+}
+header .container .col-1 {
+    width: 60%;
+    color: white;
+}
+
+header .container .col-1 h1 {
+    margin-top: 2%;
+    margin-left: 6%;
+}
+header .container .col-2 {
+    width: 30%;
+    text-align: right;
+}
+header .container .col-2 .fa {
+    font-size: 20px;
+    margin-top: 6%;
+    margin-left: 8px;
+}
+
+/* css for navbar */
+ul {
+    background-color: #333;
+    list-style-type: none;
+}
+ul li {
+    display: inline-block;
+    margin: 4px 6px;
+    padding: 14px 16px;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+li:hover {
+    background-color: black;
+    color: white;
+}
+ul .search{
+    float: right;
+}
+ul .search span{
+    color: aliceblue;
+}
+ul .search input{
+    height: 20px;
+    width: 50%;
+}
+ul .search:hover{
+    height: 20px;
+}
+
+ul .icon{
+    display: none;
+}
+/* welcome section starts from here */
+.first-section {
+    padding-bottom: 40px;
+    border-bottom: 4px solid rgb(243, 208, 156);
+}
+.welcome-container {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.welcome-container .row {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #333;
+    border-radius: 5px 5px 0 0;
+}
+.welcome-container .col-1 {
+    width: 70%;
+    padding: 2% 0% 2% 2%;
+}
+.welcome-container .col-1 h1 {
+    color: rgb(98, 164, 226);
+}
+.welcome-container .col-1 p {
+    color: white;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.welcome-container .col-2 {
+    width: 30%;
+}
+.buttons button {
+    background-color: #e2b110;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.buttons button:hover {
+    cursor: pointer;
+}
+.welcome-container .img1 {
+    position: absolute;
+    height: 250px;
+    bottom: 30px;
+    opacity: 1;
+}
+.welcome-container .img2 {
+    position: absolute;
+    height: 230px;
+    width: 25%;
+    bottom: 30px;
+}
+
+.welcome-container .row2 {
+    padding: 1%;
+    background-color: rgb(117, 117, 212);
+    border-radius: 0 0 5px 5px;
+    color: azure;
+}
+
+/* blog section css starts from here */
+.second-section {
+    padding-top: 40px;
+    background-color: white;
+    padding-bottom: 20px;
+}
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+}
+.blog-container .left-section {
+    flex: 70%;
+}
+.blog-container .left-section h1 {
+    color: rgb(146, 219, 219);
+    margin-bottom: 20px;
+}
+.blog-container .left-section i {
+    color: rgba(139, 119, 3, 0.664);
+}
+.blog-container .left-section .blog1 {
+    width: 100%;
+    margin-top: 20px;
+}
+.blog-container .left-section #secondblog {
+    margin-top: 40px;
+}
+
+/* blog right section css starts from here */
+
+.blog-container .right-section {
+    flex: 30%;
+}
+.blog-container .right-section .sidebarfirst {
+    margin-top: 115px;
+    width: 100%;
+    margin-left: 5%;
+
+}
+
+.blog-container .right-section .sidebarfirst .first-row {
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    background: #333;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.blog-container .right-section .sidebarfirst .secondrow {
+    padding: 8px;
+    background-color: aqua;
+    border-radius: 0 0 5px 5px;
+}
+
+.blog-container .right-section #whowe {
+    margin-top: 30px;
+}
+.blog-container .right-section h1 {
+    margin-left: 20px;
+    color: rgb(146, 219, 219);
+}
+.blog-container .right-section .whowe {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 5px solid rgb(199, 199, 4);
+}
+.blog-container .right-section .whotext {
+    margin-left: 20px;
+}
+.blog-container .right-section #sponsors {
+    margin-top: 40px;
+}
+.blog-container .right-section .sponsors {
+    display: flex;
+    margin-top: 20px;
+}
+
+.blog-container .right-section .spons {
+    width: 90%;
+    margin-left: 20px;
+    border: 5px solid rgb(145, 145, 21);
+    justify-content: space-between;
+}
+
+/* contact us css starts from here */
+#contactus {
+    background-color: #333;
+    padding: 3%;
+}
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+.contactus form {
+    display: flex;
+    flex-direction: column;
+}
+.contactus .col-1 h1 {
+    color: aquamarine;
+    margin-bottom: 10px;
+}
+.contactus .col-1 .inputs input {
+    height: 30px;
+}
+.contactus .col-1 .textarea textarea {
+    color: rgb(131, 94, 94);
+    margin-top: 10px;
+}
+.contactus .col-1 .timescale input {
+    height: 30px;
+    width: 93%;
+    margin-top: 10px;
+}
+.contactus .col-1 .button button {
+    background-color: #e2b110;
+    color: white;
+    border: none;
+    height: 40px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-right: auto;
+}
+.contactus .col-1 form .button {
+    align-self: flex-end;
+    margin-right: 20px;
+}
+.contactus .col-1 form .button button:hover {
+    cursor: pointer;
+}
+
+.contactus .col-2 .internel {
+    display: flex;
+    flex-direction: column;
+}
+.contactus .col-2 h1 {
+    color: aquamarine;
+    letter-spacing: 7px;
+    text-align: center;
+}
+.contactus .col-2 .row1 {
+    display: flex;
+    justify-content: center;
+}
+.contactus .col-2 .row1 img {
+    height: 125px;
+    width: 125px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: 5px solid rgb(184, 184, 15);
+}
+.contactus .col-2 .row2 {
+    display: flex;
+    justify-content: center;
+
+}
+.contactus .col-2 .row2 img {
+    height: 125px;
+    width: 125px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: 5px solid rgb(184, 184, 15);
+}
+.contactus .col-2 .portfolio {
+    align-self: flex-end;
+}
+.contactus .col-2 .portfolio button {
+    background-color: #e2b110;
+    border: none;
+    height: 35px;
+    color: white;
+    margin-top: 10px;
+    margin-right: 65px;
+}
+.contactus .col-3 .internalcontent {
+    display: flex;
+    flex-direction: column;
+}
+.contactus .col-3 h1 {
+    color: aquamarine;
+
+}
+.contactus .col-3 p {
+    color: white;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.contactus .col-3 a {
+    color: aquamarine;
+    text-decoration: none;
+}
+.contactus .col-3 .follow {
+    align-self: flex-end;
+}
+.contactus .col-3 .follow button {
+    background-color: #e2b110;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+/* footer css starts from here  */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(53, 143, 228);
+    color: white;
+    padding: 15px;
+}
+footer a {
+    text-decoration: none;
+    color: wheat;
+}
+
+/* media query starts from here */
+
+@media (max-width: 600px) {
+    *{
+        margin: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    ul li {
+        display: none;
+        }
+    
+    ul .icon{
+        display: block;
+    }
+  ul .icon:hover + li{
+        display: block;
+    }
+
+
+    /* welcome section starts from here */
+
+.welcome-container {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 0%;
+    width: 100%;
+}
+
+.welcome-container .row {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #333;
+    border-radius: 5px 5px 0 0;
+}
+.welcome-container .col-1 {
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 40px;
+}
+.welcome-container .col-1 p{
+    word-wrap    : break-word;
+    overflow-wrap: break-word;
+}
+
+.welcome-container .col-2 {
+    width: 100%;
+}
+
+.welcome-container .img1 {
+display: none;
+}
+.welcome-container .img2 {
+    display: none;
+}
+
+
+/* blog section css starts from here */
+
+.blog-container .right-section .sidebarfirst {
+    margin-left: 0%;
+
+}
+.blog-container .right-section .whowe {
+    margin-left: 0px;
+}
+.blog-container .right-section .whotext {
+    margin-left: 0px;
+}
+.blog-container .right-section .spons {
+    width: 100%;
+    margin-left: 0px;
+}
+
+/* contact us section starts from here */
+
+.contactus {
+    grid-template-columns: auto;
+}
+
+.contactus .col-1 .timescale input {
+    width: 100%;
+}
+
+.contactus .col-1 form .button {
+    margin-right: 20px;
+}
+.contactus .col-1 form textarea
+{
+    width: 100%;
+}
+
+.contactus .col-2 .row1 img {
+    margin-right: 10px;
+}
+
+.contactus .col-2 .row2 img {
+    margin-right: 10px;
+}
+
+.contactus .col-2 .portfolio button {
+
+    margin-right: 0px;
+}
+
+
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 600px) and (max-width: 967px) {
+
+    body{
+        overflow-x: hidden;
+    }
+/* welcome section starts from here */
+
+.welcome-container {
+    margin-left: 1%;
+    width: 98%;
+}
+.welcome-container .col-1{
+    padding: 0%;
+}
+
+.welcome-container .img2 {
+    width: 35%;
+}
+
+
+    /* blog section css starts from here */
+
+    .blog-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .blog-container .left-section {
+        flex: 55%;
+    }
+    .blog-container .left-section h1 {
+        margin-bottom: 20px;
+    }
+
+
+    /* blog right section css starts from here */
+
+    .blog-container .right-section {
+        flex: 45%;
+    }
+    .blog-container .right-section .sidebarfirst {
+        margin-top: 115px;
+        width: 80%;
+
+    }
+
+
+    .blog-container .right-section #whowe {
+        margin-top: 30px;
+        
+    }
+    .blog-container .right-section .whowe {
+        width: 75%;
+        
+    }
+    .blog-container .right-section .whotext {
+       width: 80%;
+    }
+
+
+    .blog-container .right-section .spons {
+        width: 50%;
+        border: 5px solid rgb(145, 145, 21);
+        justify-content: space-between;
+    }
+
+    /* contact us section starts from here */
+    .contactus {
+        display: grid;
+        grid-template-columns:100%;
+        justify-content: space-between;
+    }
+    .contactus .col-1 form textarea{
+        width: 90%;
+    }
+    .contactus .col-1 form .timescale input{
+        width: 90%;
+    }
+
+}
+
+    
+
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 967px) {
+    body {
+        overflow-x: hidden;
+    }
+/* welcome section starts from here */
+        .welcome-container {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 2%;
+            width: 95%;
+        }
+        /* blog section css starts from here */
+
+        .blog-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .blog-container .left-section {
+            flex: 55%;
+        }
+        .blog-container .left-section h1 {
+            margin-bottom: 20px;
+        }
+
+
+        /* blog right section css starts from here */
+
+        .blog-container .right-section {
+            flex: 45%;
+        }
+        .blog-container .right-section .sidebarfirst {
+            margin-top: 115px;
+            width: 80%;
+
+        }
+
+
+        .blog-container .right-section #whowe {
+            margin-top: 30px;
+        }
+        .blog-container .right-section .whowe {
+            width: 75%;
+        }
+        .blog-container .right-section .whotext {
+           width: 80%;
+        }
+
+
+        .blog-container .right-section .spons {
+            width: 60%;
+            border: 5px solid rgb(145, 145, 21);
+            justify-content: space-between;
+        }
+
+
+
+}
